@@ -29,10 +29,15 @@ os.makedirs(test_dir, exist_ok=True)
 
 train_images = train_pixels.reshape(-1, 28, 28)
 
+test_images = test_pixels.reshape(-1, 28, 28)
+
+# NOTE:
+# The following two for loops saves images from the CSV files
+# purely for visualization and understanding of the dataset.
+# It is NOT required for training or for generating the Kaggle submission.
+
 for i in tqdm(range(len(train_images)), desc="Saving train images"):
     plt.imsave(f"{train_dir}/{i}_{train_label[i]}.png", train_images[i], cmap="gray")
-
-test_images = test_pixels.reshape(-1, 28, 28)
 
 for i in tqdm(range(len(test_images)), desc="Saving test images"):
     plt.imsave(f"{test_dir}/{i}.png", test_images[i], cmap="gray")
