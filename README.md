@@ -2,12 +2,15 @@
 
 This repository contains my solution to the **Kaggle Digit Recognizer** competition using a custom **Convolutional Neural Network (CNN)** implemented in **PyTorch**.
 
+## Results
+
 - Achieved a public leaderboard score of approximately **0.993**
   on the Kaggle Digit Recognizer competition.
 - This placed the solution in the **top ~25% of submissions**
   at the time of evaluation.
--The result was obtained using a custom CNN trained with the **AdamW**
-optimizer and a **cosine learning rate schedule**.
+- The result was obtained using a custom CNN trained with the **AdamW**
+  optimizer and a **cosine learning rate schedule**.
+
 
 ---
 
